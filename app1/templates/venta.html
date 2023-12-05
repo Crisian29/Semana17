@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+    <h1>Lista de Ventas</h1>
+    <ul>
+        {% for Venta in Ventas %}
+        <li>{{ Venta.fecha_venta }} - {{ Venta.monto }} -
+        {{ Venta.cliente_id }} - {{ Venta.empleado_id }}
+        {% endfor %}
+    </ul>
+</body>
+</html>
